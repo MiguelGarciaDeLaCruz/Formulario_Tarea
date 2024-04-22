@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">PruebaExitosa</string>
+    <string name="Hw">- FORMULARIO -</string>
+    <string name="accept_button">Aceptar</string>
+    <string name="name">Nombre(s)</string>
+    <string name="nickname">Apellidos</string>
+    <string name="phone">Telefono</string>
+    <string name="email">Correo electronico</string>
+</resources>

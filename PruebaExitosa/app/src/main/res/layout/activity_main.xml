@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context=".MainActivity"
+        android:background="@color/azulitoClaro"
+>
+    <!-- ImageView se usa para imagenes-->
+
+    <TextView
+            android:id="@+id/text_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Hw"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+
+    />
+
+    <TextView
+            android:id="@+id/textCorrect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/checked"
+            android:layout_marginTop="20dp"
+            android:visibility="invisible"
+
+    />
+
+    <TextView
+            android:id="@+id/textIncorrect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/cancel"
+            android:visibility="invisible"
+    />
+    <!-- hint -> muestra un mensaje de sugerencia al usuario sobre lo que se debe ingresar -->
+    <!-- Nombre -->
+    <EditText
+            android:id="@+id/name_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="@string/name"
+            android:textColorHint="@color/gray"
+            android:textColor="@color/black"
+            android:layout_marginTop="24dp"
+            android:layout_marginHorizontal="24dp"
+            android:drawableLeft="@drawable/user"
+            android:drawablePadding="15dp"
+            android:visibility="visible"
+
+    />
+
+    <!-- Apellidos -->
+    <EditText
+            android:id="@+id/nickname_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="@string/nickname"
+            android:textColorHint="@color/gray"
+            android:textColor="@color/black"
+            android:layout_marginTop="24dp"
+            android:layout_marginHorizontal="24dp"
+            android:drawableLeft="@drawable/user"
+            android:drawablePadding="15dp"
+            android:visibility="visible"
+            />
+
+    <!-- Numero Telefonico -->
+    <EditText
+            android:id="@+id/phone_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:hint="@string/phone"
+            android:textColorHint="@color/gray"
+            android:textColor="@color/black"
+            android:layout_marginTop="24dp"
+            android:layout_marginHorizontal="24dp"
+            android:drawableLeft="@drawable/phone"
+            android:drawablePadding="9dp"
+            android:visibility="visible"
+    />
+
+    <!-- E-mail -->
+    <EditText
+            android:id="@+id/email_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="@string/email"
+            android:textColorHint="@color/gray"
+            android:textColor="@color/black"
+            android:layout_marginTop="24dp"
+            android:layout_marginHorizontal="24dp"
+            android:drawableLeft="@drawable/email"
+            android:drawablePadding="15dp"
+            android:visibility="visible"
+    />
+
+    <Button
+            android:id="@+id/button_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/azulitoFuerte"
+            android:text="@string/accept_button"
+            android:textColor="@color/black"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="8dp"
+    />
+
+</LinearLayout>
